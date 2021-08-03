@@ -1,3 +1,9 @@
-.venv
-/dist
-/brain_games/__pycache__ 
+*.egg-info
+__pycache__
+dist/
+*.pyc
+.venv/
+.coverage
+coverage.xml
+.pytest_cache/
+.vim
