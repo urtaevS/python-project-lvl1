@@ -4,10 +4,8 @@
 name: Linter Test
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  - push
+  - pull_request
 
 jobs:
   build:
@@ -27,9 +25,7 @@ jobs:
     - name: Install dependencies
       run: |
         poetry install
-        python -m pip install --upgrade pip
-        python -m pip install flake8 pytest
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        poetry add --dev wemake-python-styleguide
     - name: Run linter
         run: |
           make lint
