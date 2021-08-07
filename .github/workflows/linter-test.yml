@@ -27,5 +27,5 @@ jobs:
         poetry install
         poetry add --dev wemake-python-styleguide
     - name: Run linter
-        run: |
-          make lint
+      run: |
+        make lint
