@@ -25,6 +25,7 @@ jobs:
     - name: chekLlinter
       run: |
         pip install poetry
+        make package-install
         make install
         make lint
     #- name: Install dependencies
