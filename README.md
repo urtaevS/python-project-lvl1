@@ -5,5 +5,3 @@
 <a href=https://codeclimate.com/github/codeclimate/codeclimate/maintainability><img src=https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability /></a>
 ### Brain games #1
 https://asciinema.org/a/xZVB8Px5JtwvXRxWwGTqTh60E.svg
-
-<script id="asciicast-xZVB8Px5JtwvXRxWwGTqTh60E" src="https://asciinema.org/a/xZVB8Px5JtwvXRxWwGTqTh60E.js" async></script>
