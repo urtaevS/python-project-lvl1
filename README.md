@@ -4,5 +4,4 @@
 ### Maintainability Badge
 <a href=https://codeclimate.com/github/codeclimate/codeclimate/maintainability><img src=https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability /></a>
 ### Brain games #1
-<script id="asciicast-xZVB8Px5JtwvXRxWwGTqTh60E" src="https://asciinema.org/a/xZVB8Px5JtwvXRxWwGTqTh60E.js" async></script>
-<a href="https://asciinema.org/a/xZVB8Px5JtwvXRxWwGTqTh60E" target="_blank"><img src="https://asciinema.org/a/xZVB8Px5JtwvXRxWwGTqTh60E.svg" /></a>
+[![asciicast](https://asciinema.org/a/xZVB8Px5JtwvXRxWwGTqTh60E.svg)]
