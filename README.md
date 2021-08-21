@@ -7,3 +7,7 @@
 [![asciicast](https://asciinema.org/a/ijhbqUWV4sC1N7P4i6QmxGby7.svg)](https://asciinema.org/a/ijhbqUWV4sC1N7P4i6QmxGby7)
 [![asciicast](https://asciinema.org/a/KJ9vUqY2MiCHG8MeD2oFdG9oq.svg)](https://asciinema.org/a/KJ9vUqY2MiCHG8MeD2oFdG9oq)
 
+### Запуск brain-calc
+[![asciicast](https://asciinema.org/a/YjStAG9nXMyIe7gCYtWZBexZN.svg)](https://asciinema.org/a/YjStAG9nXMyIe7gCYtWZBexZN)
+
+
