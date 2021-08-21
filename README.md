@@ -4,4 +4,4 @@
 ### Maintainability Badge
 <a href=https://codeclimate.com/github/codeclimate/codeclimate/maintainability><img src=https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability /></a>
 ### Установка и запуск brain-even
-[![asciicast](https://asciinema.org/a/U7CE0TdKWF7Ws8uNKPOWRzcvH.svg)](https://asciinema.org/a/U7CE0TdKWF7Ws8uNKPOWRzcvH)
+[![asciicast](https://asciinema.org/a/KJ9vUqY2MiCHG8MeD2oFdG9oq.svg)](https://asciinema.org/a/KJ9vUqY2MiCHG8MeD2oFdG9oq)
