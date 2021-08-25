@@ -5,9 +5,12 @@
 <a href=https://codeclimate.com/github/codeclimate/codeclimate/maintainability><img src=https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability /></a>
 ### Установка и запуск brain-even
 [![asciicast](https://asciinema.org/a/ijhbqUWV4sC1N7P4i6QmxGby7.svg)](https://asciinema.org/a/ijhbqUWV4sC1N7P4i6QmxGby7)
-[![asciicast](https://asciinema.org/a/KJ9vUqY2MiCHG8MeD2oFdG9oq.svg)](https://asciinema.org/a/KJ9vUqY2MiCHG8MeD2oFdG9oq)
+[![asciicast](https://asciinema.org/a/PDlbRbVgQeRoUC0DxAsVGVFk9.svg)](https://asciinema.org/a/PDlbRbVgQeRoUC0DxAsVGVFk9)
 
 ### Запуск brain-calc
-[![asciicast](https://asciinema.org/a/YjStAG9nXMyIe7gCYtWZBexZN.svg)](https://asciinema.org/a/YjStAG9nXMyIe7gCYtWZBexZN)
+[![asciicast](https://asciinema.org/a/jmie3g1s9OiV1UpPgQeFPBsHy.svg)](https://asciinema.org/a/jmie3g1s9OiV1UpPgQeFPBsHy)
+
+### Запуск brain-gcd
+[![asciicast](https://asciinema.org/a/E39BIKewbf5KJHdWtau34DFR4.svg)](https://asciinema.org/a/E39BIKewbf5KJHdWtau34DFR4)
 
 
