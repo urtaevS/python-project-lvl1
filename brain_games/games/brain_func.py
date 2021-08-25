@@ -2,45 +2,45 @@ import random
 
 import prompt
 
+from brain_games.games.variables import wrong_answer, welcome
+
 
 def greeting():
-    """Greeting an user."""
-    print('Welcome to the Brain Games!')
+    """Greeting an user and a name."""
+    print(welcome)
+    global name
+    name = prompt.string('May I have your name? ')
+    print('Hello, {0}!'.format(name))
 
 
 def even():
-    """Prompt user name and start the game."""
-    name = prompt.string('May I have your name? ')
-    print('Hello, {0}!'.format(name))
+    """Ask user and start the game."""
     print('Answer "yes" if the number is even, otherwise answer "no".')
     count = 0
     while count < 3:
-        num = random.randint(0, 100)
+        num = random.randint(1, 100)
         print('Question: {0}'.format(num))
         answer = input(str('Your answer: '))
         right_answer = 'yes' if num % 2 == 0 else 'no'
-        wrong_answer = "'{0}' is wrong answer ;(.Correct answer was '{1}'.".format(answer, right_answer) + "\nLet's try again, {0}!".format(name)
-        if answer != right_answer:
-            print(wrong_answer)
-            break
-        else:
+        if answer == right_answer:
             print('Correct!')
             count += 1
-        print('Congratilation, {0}!'.format(name))
+        else:
+            print(wrong_answer.format(answer, right_answer, name))
+            return
+    print('Congratulation, {0}!'.format(name))
 
 
 def calc():
     """Calculate random numbers."""
-    name = prompt.string('May I have your name? ')
-    print('Hello, {0}!'.format(name))
+    print('What is the result of the expression?')
     count = 0
     while count < 3:
-        num1 = random.randint(0, 100)
-        num2 = random.randint(0, 100)
+        num1 = random.randint(1, 100)
+        num2 = random.randint(1, 100)
         simbol = random.choice(['+', '-', '*'])
-        expression = '{0} {1} {2}'.format(num1, simbol, num2)
-        print('What is the result of the expression?')
-        print('Question: {0}'.format(expression))
+        term = '{0} {1} {2}'.format(num1, simbol, num2)
+        print('Question: {0}'.format(term))
         answer = input(str('Your answer: '))
         if simbol == '+':
             right_answer = num1 + num2
@@ -48,10 +48,34 @@ def calc():
             right_answer = num1 - num2
         elif simbol == '*':
             right_answer = num1 * num2
-        if answer != str(right_answer):
-            print("'{0}' is wrong answer ;(.Correct answer was '{1}'.".format(answer, right_answer) + "\nLet's try again, {0}!".format(name))
-            break
-        else:
+        if answer == str(right_answer):
             print('Correct!')
             count += 1
-        print('Congratilation, {0}!'.format(name))
+        else:
+            print(wrong_answer.format(answer, right_answer, name))
+            return
+    print('Congratulation, {0}!'.format(name))
+
+
+def gcd():
+    """Find the greatest common divisor."""
+    print('Find the greatest common divisor of given numbers.')
+    count = 0
+    while count < 3:
+        num1 = random.randint(1, 100)
+        num2 = random.randint(1, 100)
+        term = '{0} {1}'.format(num1, num2)
+        print('Question: {0}'.format(term))
+        answer = input(str('Your answer: '))
+        while num2 > 0:
+            result = num1 % num2
+            num1 = num2
+            num2 = result
+        right_answer = num1
+        if answer == str(right_answer):
+            print('Correct!')
+            count += 1
+        else:
+            print(wrong_answer.format(answer, right_answer, name))
+            return
+    print('Congratulation, {0}!'.format(name))
