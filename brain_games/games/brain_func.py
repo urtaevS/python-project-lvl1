@@ -41,7 +41,7 @@ def calc():
         simbol = random.choice(['+', '-', '*'])
         term = '{0} {1} {2}'.format(num1, simbol, num2)
         print('Question: {0}'.format(term))
-        answer = input(str('Your answer: '))
+        answer = input('Your answer: ')
         if simbol == '+':
             right_answer = num1 + num2
         elif simbol == '-':
@@ -73,6 +73,35 @@ def gcd():
             num2 = result
         right_answer = num1
         if answer == str(right_answer):
+            print('Correct!')
+            count += 1
+        else:
+            print(wrong_answer.format(answer, right_answer, name))
+            return
+    print('Congratulation, {0}!'.format(name))
+
+
+def progression():
+    print('What number is missing in the progression?')
+    replace_num = '..'
+    count = 0
+    while count < 3:
+        num1 = random.randint(1, 100)
+        step = random.randint(1, 5)
+        string = ''
+        temp_num1 = num1
+        i = 0
+        for i in range(10):
+            string = string + str(temp_num1) + ' '
+            fin = temp_num1 + step
+            temp_num1 = fin
+            i += 1
+        right_answer = random.randrange(num1, fin, step)
+        right_answer = str(right_answer)
+        string_replace = string.replace(right_answer, replace_num)
+        print('Question: {0}'.format(string_replace))
+        answer = input('Your answer: ')
+        if answer == right_answer:
             print('Correct!')
             count += 1
         else:
