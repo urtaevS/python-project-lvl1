@@ -28,7 +28,7 @@ def even():
         else:
             print(wrong_answer.format(answer, right_answer, name))
             return
-    print('Congratulation, {0}!'.format(name))
+    print('Congratulations, {0}!'.format(name))
 
 
 def calc():
@@ -54,7 +54,7 @@ def calc():
         else:
             print(wrong_answer.format(answer, right_answer, name))
             return
-    print('Congratulation, {0}!'.format(name))
+    print('Congratulations, {0}!'.format(name))
 
 
 def gcd():
@@ -78,7 +78,7 @@ def gcd():
         else:
             print(wrong_answer.format(answer, right_answer, name))
             return
-    print('Congratulation, {0}!'.format(name))
+    print('Congratulations, {0}!'.format(name))
 
 
 def progression():
@@ -108,7 +108,7 @@ def progression():
         else:
             print(wrong_answer.format(answer, right_answer, name))
             return
-    print('Congratulation, {0}!'.format(name))
+    print('Congratulations, {0}!'.format(name))
 
 
 def prime():
@@ -126,7 +126,7 @@ def prime():
         else:
             print(wrong_answer.format(answer, right_answer, name))
             return
-    print('Congratulation, {0}!'.format(name))
+    print('Congratulations, {0}!'.format(name))
 
 
 def prime_num(num):
