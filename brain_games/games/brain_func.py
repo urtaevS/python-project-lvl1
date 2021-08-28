@@ -14,7 +14,7 @@ def greeting():
 
 
 def even():
-    """Ask user and start the game."""
+    """Guess the even number"""
     print('Answer "yes" if the number is even, otherwise answer "no".')
     count = 0
     while count < 3:
@@ -32,7 +32,7 @@ def even():
 
 
 def calc():
-    """Calculate random numbers."""
+    """Calculate two random numbers."""
     print('What is the result of the expression?')
     count = 0
     while count < 3:
@@ -58,7 +58,7 @@ def calc():
 
 
 def gcd():
-    """Find the greatest common divisor."""
+    """Find the greatest common divisor of two random numbers."""
     print('Find the greatest common divisor of given numbers.')
     count = 0
     while count < 3:
@@ -82,6 +82,7 @@ def gcd():
 
 
 def progression():
+    """Guess the missing number from tuple"""
     print('What number is missing in the progression?')
     replace_num = '..'
     count = 0
@@ -108,3 +109,41 @@ def progression():
             print(wrong_answer.format(answer, right_answer, name))
             return
     print('Congratulation, {0}!'.format(name))
+
+
+def prime():
+    """Find a prime number"""
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    count = 0
+    while count < 3:
+        num = random.randint(1, 100)
+        print('Question: {0}'.format(num))
+        answer = input(str('Your answer: '))
+        right_answer = 'yes' if prime_num(num) else 'no'
+        if answer == right_answer:
+            print('Correct!')
+            count += 1
+        else:
+            print(wrong_answer.format(answer, right_answer, name))
+            return
+    print('Congratulation, {0}!'.format(name))
+
+
+def prime_num(num):
+    """Predicate False or True for def prime()"""
+    div = 1
+    count = 1
+    if num < 2 or num % 2 == 0 and num != 2:
+        return False
+    elif num == 2:
+        return True
+    else:
+        while div < num and count < 3:
+            result = num % div
+            div += 2
+            if result == 0:
+                count += 1
+        if count > 2:
+            return False
+        else:
+            return True
