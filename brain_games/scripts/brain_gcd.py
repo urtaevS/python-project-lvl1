@@ -1,9 +1,8 @@
-from brain_games.games.brain_func import gcd, greeting
+from brain_games.games.gcd import gcd
 
 
 def main():
     """Start calling two func."""
-    greeting()
     gcd()
 
 

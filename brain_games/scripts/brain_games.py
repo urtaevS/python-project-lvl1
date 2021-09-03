@@ -1,9 +1,9 @@
-from brain_games.cli import welcome_user
+from brain_games.games.greeting import greeting
 
 
 def main():
     """Greeting an user and print."""
-    welcome_user()
+    greeting()
 
 
 if __name__ == '__main__':

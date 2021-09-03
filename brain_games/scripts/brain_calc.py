@@ -1,9 +1,8 @@
-from brain_games.games.brain_func import calc, greeting
+from brain_games.games.calc import calc
 
 
 def main():
     """Start calling two func."""
-    greeting()
     calc()
 
 

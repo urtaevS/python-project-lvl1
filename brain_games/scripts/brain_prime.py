@@ -1,9 +1,8 @@
-from brain_games.games.brain_func import prime, greeting
+from brain_games.games.prime import prime
 
 
 def main():
     """Start calling two func."""
-    greeting()
     prime()
 
 

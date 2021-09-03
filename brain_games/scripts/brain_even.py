@@ -1,9 +1,8 @@
-from brain_games.games.brain_func import even, greeting
+from brain_games.games.even import even
 
 
 def main():
-    """Start calling two func."""
-    greeting()
+    """Start even game."""
     even()
 
 

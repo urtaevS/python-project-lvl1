@@ -1,9 +1,8 @@
-from brain_games.games.brain_func import progression, greeting
+from brain_games.games.progression import progression
 
 
 def main():
     """Start calling two func."""
-    greeting()
     progression()
 
 
