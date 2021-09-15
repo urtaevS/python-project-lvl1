@@ -1,4 +1,3 @@
-
 import prompt
 
 ROUND_COUNTER = 3
