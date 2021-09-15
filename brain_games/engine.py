@@ -14,8 +14,9 @@ def run(round):
         correct_answer, question = round()
         print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
+        RESULT = f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'."
         if correct_answer != answer:
-            print(f'{answer} is wrong answer ;(. Correct answer was {correct_answer}.')
+            print(RESULT)
             print(f'Let\'s try again, {name}!')
             return
         else:
