@@ -1,9 +1,6 @@
 from random import randint, choice
 
 
-DESCRIPTION = 'What is the result of the expression?'
-
-
 def round():
     number1 = randint(1, 100)
     number2 = randint(1, 100)
@@ -20,3 +17,8 @@ def round():
         correct_answer = number1 * number2
 
     return str(correct_answer), question
+
+
+def description():
+    DESCRIPTION = 'What is the result of the expression?'
+    return DESCRIPTION

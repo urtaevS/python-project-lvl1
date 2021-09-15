@@ -1,3 +1,4 @@
+
 import prompt
 
 ROUND_COUNTER = 3
@@ -8,7 +9,6 @@ def run(round):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-
     count = ROUND_COUNTER
     while count:
         correct_answer, question = round()
