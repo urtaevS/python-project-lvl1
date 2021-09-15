@@ -1,9 +1,12 @@
-from brain_games.games.even import core
+#!/usr/bin/env python3
+from brain_games import engine
+
+from brain_games.games import even
 
 
 def main():
     """Start even game."""
-    core()
+    engine.run(even.round)
 
 
 if __name__ == '__main__':

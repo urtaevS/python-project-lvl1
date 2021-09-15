@@ -1,9 +1,12 @@
-from brain_games.games.prime import prime
+#!/usr/bin/env python3
+from brain_games import engine
+
+from brain_games.games import prime
 
 
 def main():
     """Start calling two func."""
-    prime()
+    engine.run(prime.round)
 
 
 if __name__ == '__main__':

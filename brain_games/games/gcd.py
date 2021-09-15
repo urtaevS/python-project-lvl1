@@ -1,30 +1,16 @@
-import random
+from random import randint
 
-from brain_games.games.variables import wrong_answer
-
-from brain_games.games.greeting import greeting
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
-def gcd():
-    """Find the greatest common divisor of two random numbers."""
-    name = greeting()
-    print('Find the greatest common divisor of given numbers.')
-    count = 0
-    while count < 3:
-        num1 = random.randint(1, 100)
-        num2 = random.randint(1, 100)
-        term = '{0} {1}'.format(num1, num2)
-        print('Question: {0}'.format(term))
-        answer = input(str('Your answer: '))
-        while num2 > 0:
-            result = num1 % num2
-            num1 = num2
-            num2 = result
-        right_answer = num1
-        if answer == str(right_answer):
-            print('Correct!')
-            count += 1
-        else:
-            print(wrong_answer.format(answer, right_answer, name))
-            return
-    print('Congratulations, {0}!'.format(name))
+def round():
+    number1 = randint(1, 100)
+    number2 = randint(1, 100)
+    question = f'{number1} {number2}'
+    while number2 > 0:
+        result = number1 % number2
+        number1 = number2
+        number2 = result
+    correct_answer = number1
+
+    return str(correct_answer), question
