@@ -2,6 +2,7 @@ from random import randint, choice
 
 DESCRIPTION = 'What is the result of the expression?'
 
+
 def round():
     number1 = randint(1, 100)
     number2 = randint(1, 100)
