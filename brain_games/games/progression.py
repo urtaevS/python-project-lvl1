@@ -3,10 +3,17 @@ from random import randint, randrange
 DESCRIPTION = 'What number is missing in the progression?'
 
 
-def round():
-    replace_number = '..'
+def generate_numbers():
     number = randint(1, 100)
     step = randint(1, 5)
+
+    return number, step
+
+
+def get_question_and_correct_answer():
+    number, step = generate_numbers()
+
+    replace_number = '..'
     string = ''
     buffer_number = number
     length_string = 0
