@@ -1,18 +1,18 @@
-import prompt
+from prompt import string
 
 ROUND_COUNTER = 3
 
 
 def run(get_question_and_correct_answer):
-    """Get an user name and greeting user."""
+    """Get an user name and greeting user. Start the game"""
     print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
+    name = string('May I have your name? ')
     print(f'Hello, {name}!')
     count = ROUND_COUNTER
     while count:
         correct_answer, question = get_question_and_correct_answer()
         print(f'Question: {question}')
-        answer = prompt.string('Your answer: ')
+        answer = string('Your answer: ')
         if correct_answer != answer:
             print(f"""\
 '{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\
