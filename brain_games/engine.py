@@ -19,7 +19,7 @@ def run(get_question_and_correct_answer):
             """)
             print(f'Let\'s try again, {name}!')
             return
-        else:
-            print('Correct!')
-            count -= 1
+        #else:
+        print('Correct!')
+        count -= 1
     print(f'Congratulations, {name}!')
