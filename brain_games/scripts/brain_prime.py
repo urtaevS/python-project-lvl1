@@ -6,7 +6,7 @@ from brain_games.games import prime
 
 def main():
     """Start calling two func."""
-    engine.run(prime.generate_game_data)
+    engine.run(prime.get_question_and_correct_answer)
 
 
 if __name__ == '__main__':
