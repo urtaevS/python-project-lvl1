@@ -10,7 +10,7 @@ def generate_numbers():
     return number, step
 
 
-def get_question_and_correct_answer():
+def generate_game_data():
     number, step = generate_numbers()
 
     row_of_numbers = ''

@@ -6,7 +6,7 @@ from brain_games.games import progression
 
 def main():
     """Start calling two func."""
-    engine.run(progression.get_question_and_correct_answer)
+    engine.run(progression.generate_game_data)
 
 
 if __name__ == '__main__':

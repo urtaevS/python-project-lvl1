@@ -3,14 +3,14 @@ from random import randint
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def generate_number():
+def generate_game_data():
     number = randint(1, 100)
 
     return number
 
 
 def get_question_and_correct_answer():
-    number = generate_number()
+    number = generate_game_data()
     question = number
     correct_answer = 'yes' if calculate_prime_number(number) else 'no'
     return correct_answer, question
