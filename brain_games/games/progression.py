@@ -10,9 +10,17 @@ def generate_game_data():
     return number, step
 
 
-def get_question_and_correct_answer():
+def receive_question_and_answer():
     number, step = generate_game_data()
 
+    correct_answer, row_of_numbers = calculate_answer(number, step)
+
+    question = row_of_numbers.replace(str(correct_answer), '..')
+
+    return correct_answer, question
+
+
+def calculate_answer(number, step):
     row_of_numbers = ''
     buffer_number = number
     length_row_of_numbers = 0
@@ -23,6 +31,4 @@ def get_question_and_correct_answer():
         buffer_number = last_number
         length_row_of_numbers += 1
     correct_answer = str(randrange(number, last_number, step))
-    question = row_of_numbers.replace(correct_answer, '..')
-
-    return correct_answer, question
+    return str(correct_answer), row_of_numbers
