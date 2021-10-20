@@ -9,11 +9,18 @@ def generate_game_data():
     return number
 
 
-def receive_question_and_answer():
+def get_question_and_answer():
     number = generate_game_data()
     question = number
-    correct_answer = 'yes' if calculate_prime_number(number) else 'no'
+    correct_answer = answer(number)
+
     return correct_answer, question
+
+
+def answer(number):
+    correct_answer = 'yes' if calculate_prime_number(number) else 'no'
+
+    return correct_answer
 
 
 def calculate_prime_number(number):

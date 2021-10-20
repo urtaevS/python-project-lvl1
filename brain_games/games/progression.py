@@ -10,17 +10,17 @@ def generate_game_data():
     return number, step
 
 
-def receive_question_and_answer():
+def get_question_and_answer():
     number, step = generate_game_data()
 
-    correct_answer, row_of_numbers = calculate_answer(number, step)
+    correct_answer, row_of_numbers = answer(number, step)
 
     question = row_of_numbers.replace(str(correct_answer), '..')
 
     return correct_answer, question
 
 
-def calculate_answer(number, step):
+def answer(number, step):
     row_of_numbers = ''
     buffer_number = number
     length_row_of_numbers = 0

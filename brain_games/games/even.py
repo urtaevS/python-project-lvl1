@@ -9,7 +9,13 @@ def generate_game_data():
     return number
 
 
-def receive_question_and_answer():
+def get_question_and_answer():
     question = generate_game_data()
-    correct_answer = 'yes' if question % 2 == 0 else 'no'
+    correct_answer = answer(question)
     return correct_answer, question
+
+
+def answer(question):
+    correct_answer = 'yes' if question % 2 == 0 else 'no'
+
+    return correct_answer
