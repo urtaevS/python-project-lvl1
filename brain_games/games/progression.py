@@ -15,7 +15,7 @@ def get_question_and_answer():
 
     correct_answer, row_of_numbers = answer(number, step)
 
-    question = row_of_numbers.replace(str(correct_answer), '..')
+    question = row_of_numbers.replace(str(correct_answer), '..', 1)
 
     return correct_answer, question
 
