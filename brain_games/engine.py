@@ -3,15 +3,15 @@ from prompt import string
 ROUND_COUNTER = 3
 
 
-def run(get_question_and_answer, DESCRIPTION):
+def run(game):
     """Get an user name and greeting user. Start the game"""
     print('Welcome to the Brain Games!')
     name = string('May I have your name? ')
     print(f'Hello, {name}!')
-    print(DESCRIPTION)
+    print(game.DESCRIPTION)
     count = ROUND_COUNTER
     while count:
-        correct_answer, question = get_question_and_answer()
+        correct_answer, question = game.get_question_and_answer()
         print(f'Question: {question}')
         answer = string('Your answer: ')
         if correct_answer != answer:
