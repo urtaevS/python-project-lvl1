@@ -18,12 +18,12 @@ def get_question_and_answer():
     number1, number2, operator = generate_game_data()
 
     question = f'{number1} {operator} {number2}'
-    correct_answer = answer(operator, number1, number2)
+    correct_answer = calculate(operator, number1, number2)
 
     return str(correct_answer), question
 
 
-def answer(operator, number1, number2):
+def calculate(operator, number1, number2):
     if operator == '+':
         correct_answer = number1 + number2
     elif operator == '-':

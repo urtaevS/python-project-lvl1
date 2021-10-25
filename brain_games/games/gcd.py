@@ -14,12 +14,12 @@ def get_question_and_answer():
     number1, number2 = generate_game_data()
 
     question = f'{number1} {number2}'
-    correct_answer = answer(number1, number2)
+    correct_answer = calculate(number1, number2)
 
     return str(correct_answer), question
 
 
-def answer(number1, number2):
+def calculate(number1, number2):
     while number2 > 0:
         result = number1 % number2
         number1 = number2

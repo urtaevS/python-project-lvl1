@@ -12,12 +12,12 @@ def generate_game_data():
 def get_question_and_answer():
     number = generate_game_data()
     question = number
-    correct_answer = answer(number)
+    correct_answer = calculate(number)
 
     return correct_answer, question
 
 
-def answer(number):
+def calculate(number):
     correct_answer = 'yes' if calculate_prime_number(number) else 'no'
 
     return correct_answer

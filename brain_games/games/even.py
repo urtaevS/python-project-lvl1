@@ -11,11 +11,11 @@ def generate_game_data():
 
 def get_question_and_answer():
     question = generate_game_data()
-    correct_answer = answer(question)
+    correct_answer = calculate(question)
     return correct_answer, question
 
 
-def answer(question):
+def calculate(question):
     correct_answer = 'yes' if question % 2 == 0 else 'no'
 
     return correct_answer

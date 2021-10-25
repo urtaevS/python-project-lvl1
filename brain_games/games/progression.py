@@ -13,14 +13,14 @@ def generate_game_data():
 def get_question_and_answer():
     number, step = generate_game_data()
 
-    correct_answer, row_of_numbers = answer(number, step)
+    correct_answer, row_of_numbers = calculate(number, step)
 
     question = row_of_numbers.replace(str(correct_answer), '..', 1)
 
     return correct_answer, question
 
 
-def answer(number, step):
+def calculate(number, step):
     row_of_numbers = ''
     buffer_number = number
     length_row_of_numbers = 0
