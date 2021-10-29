@@ -1,7 +1,6 @@
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/urtaevS/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/urtaevS/python-project-lvl1/actions)
+### Welcome to the games!
+[![Actions Status](https://github.com/urtaevS/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/urtaevS/python-project-lvl1/actions/workflows/hexlet-check.yml)
 [![Linter Test](https://github.com/urtaevS/python-project-lvl1/actions/workflows/linter-test.yml/badge.svg)](https://github.com/urtaevS/python-project-lvl1/actions/workflows/linter-test.yml)
-### Maintainability Badge
 <a href=https://codeclimate.com/github/codeclimate/codeclimate/maintainability><img src=https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability /></a>
 
 Данный проект являет собой пять математических игр, из которых вы можете выбрать любую с помощью набора соответствующей команды.
@@ -11,7 +10,7 @@
 
 1. "Проверка на чётность". В данной игре нужно ответить, является ли указанное число чётным.  
 `brain-even`
-2. "Калькулятор". Просто вычисляем результат из выражения.  
+2. "Калькулятор". Необходимо вычислить выражение и вывести результат.  
 `brain-calc`
 3. "Поиск НОД". Поиск наибольшего общего делителя.<a href=https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D0%B8%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B8%D0%B9_%D0%BE%D0%B1%D1%89%D0%B8%D0%B9_%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C > Что такое НОД?</a>  
  `brain-gcd`
