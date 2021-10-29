@@ -1,9 +1,13 @@
+"""Generate an string of progression"""
+
 from random import randint, randrange
 
 DESCRIPTION = 'What number is missing in the progression?'
 
+LENGHT_OF_PROGRESSION = 10
 
 def generate_game_data():
+    """Generate random number between 1 and 100"""
     number = randint(1, 100)
     step = randint(1, 5)
 
@@ -11,6 +15,8 @@ def generate_game_data():
 
 
 def get_question_and_answer():
+    """Collect 'question' and 'correct_answer' for games"""
+
     number, step = generate_game_data()
 
     correct_answer, row_of_numbers = calculate(number, step)
@@ -19,6 +25,9 @@ def get_question_and_answer():
 
     return correct_answer, question
 
+def generate_progression(number, step):
+    row_of_numbers = ''
+    while LENGHT_OF_PROGRESSION:
 
 def calculate(number, step):
     row_of_numbers = ''

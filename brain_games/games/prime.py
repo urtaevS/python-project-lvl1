@@ -4,27 +4,23 @@ DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def generate_game_data():
+    """Generate random number between 1 and 100"""
     number = randint(1, 100)
 
     return number
 
 
 def get_question_and_answer():
+    """Collect 'question' and 'correct_answer' for games"""
     number = generate_game_data()
     question = number
-    correct_answer = calculate(number)
+    correct_answer = 'yes' if is_prime(number) is True else 'no'
 
     return correct_answer, question
 
 
-def calculate(number):
-    correct_answer = 'yes' if calculate_prime_number(number) else 'no'
-
-    return correct_answer
-
-
-def calculate_prime_number(number):
-    """Predicate False or True for def prime()"""
+def is_prime(number):
+    """Check variable 'number' prime or not"""
     divider_number = 1
     divide_count = 1
 
