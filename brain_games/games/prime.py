@@ -1,3 +1,5 @@
+"""Check random number is prime"""
+
 from random import randint
 
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
@@ -5,6 +7,7 @@ DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def generate_game_data():
     """Generate random number between 1 and 100"""
+
     number = randint(1, 100)
 
     return number
@@ -12,6 +15,7 @@ def generate_game_data():
 
 def get_question_and_answer():
     """Collect 'question' and 'correct_answer' for games"""
+
     number = generate_game_data()
     question = number
     correct_answer = 'yes' if is_prime(number) is True else 'no'
@@ -21,6 +25,7 @@ def get_question_and_answer():
 
 def is_prime(number):
     """Check variable 'number' prime or not"""
+
     divider_number = 1
     divide_count = 1
 

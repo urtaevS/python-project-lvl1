@@ -8,7 +8,8 @@ OPERATORS = ['+', '-', '*']
 
 
 def generate_game_data():
-    """Generate two random numbers between 1 and 100"""
+    """Generate two random numbers and operator"""
+
     number1 = randint(1, 100)
     number2 = randint(1, 100)
 
@@ -19,6 +20,7 @@ def generate_game_data():
 
 def get_question_and_answer():
     """Collect 'question' and 'correct_answer' for games"""
+
     number1, number2, operator = generate_game_data()
 
     question = f'{number1} {operator} {number2}'
@@ -29,6 +31,7 @@ def get_question_and_answer():
 
 def calculate(operator, number1, number2):
     """Evaluate an expression between two numbers"""
+
     if operator == '+':
         correct_answer = number1 + number2
     elif operator == '-':

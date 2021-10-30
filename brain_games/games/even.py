@@ -8,12 +8,14 @@ DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 def generate_game_data():
     """Generate random number between 1 and 100"""
+
     number = randint(1, 100)
     return number
 
 
 def get_question_and_answer():
     """Collect 'question' and 'correct_answer' for games"""
+
     number = generate_game_data()
     question = number
     correct_answer = 'yes' if is_even(number) is True else 'no'
@@ -22,5 +24,6 @@ def get_question_and_answer():
 
 def is_even(number):
     """Check variable 'number' for even"""
+
     if number % 2 == 0:
         return True
