@@ -7,8 +7,18 @@
 
 ## Installation:
 Before pull this repository you need to install:
-#### python3  
-#### poetry  
+#### python3 Install  
+Ubuntu:  
+`$ sudo apt update`  
+`$ sudo apt install python3`
+
+macOS:  
+`$ brew install python`
+
+Windows:  
+`$ choco install python`
+#### poetry   
+<a href=https://python-poetry.org/docs/>Poetry install</a>
 
 
 ## Usage:
@@ -24,7 +34,7 @@ You can choose what game you want to play (the following command you'll find bel
 6. Check the number is prime.  
 `brain-prime`
 
-## Example of program work
+## Examples of program work
 
 ### Setup and install
 [![asciicast](https://asciinema.org/a/ijhbqUWV4sC1N7P4i6QmxGby7.svg)](https://asciinema.org/a/ijhbqUWV4sC1N7P4i6QmxGby7)
