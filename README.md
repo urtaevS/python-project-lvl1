@@ -20,6 +20,8 @@ Windows:
 #### poetry   
 <a href=https://python-poetry.org/docs/>Poetry install</a>
 
+#### For install this program just clone the repository  
+`git clone https://github.com/urtaevS/python-project-lvl1.git`
 
 ## Usage:
 You can choose what game you want to play (the following command you'll find bellow):
