@@ -10,37 +10,37 @@ Before pull this repository you need to install:
 #### python3  
 #### poetry  
 
-Данный проект являет собой пять математических игр, из которых вы можете выбрать любую с помощью набора соответствующей команды.
-Команды для вызова игры указаны под описанием.
 
-На выбор представлены данные игры:
-
-1. "Проверка на чётность". В данной игре нужно ответить, является ли указанное число чётным.  
+## Usage:
+You can choose what game you want to play (the following command you'll find bellow):
+1. Check the number is even.  
 `brain-even`
-2. "Калькулятор". Необходимо вычислить выражение и вывести результат.  
+2. Calculator.  
 `brain-calc`
-3. "Поиск НОД". Поиск наибольшего общего делителя.<a href=https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D0%B8%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B8%D0%B9_%D0%BE%D0%B1%D1%89%D0%B8%D0%B9_%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C > Что такое НОД?</a>  
- `brain-gcd`
-5. "Арифметическая прогрессия". Нужно угадать (вычислить) пропущенное число.<a href=https://ru.wikipedia.org/wiki/%D0%90%D1%80%D0%B8%D1%84%D0%BC%D0%B5%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D1%8F > Что такое арифметическая прогрессия?</a>  
+3. Find the greatest common divisor between two numbers.  
+`brain-gcd`
+4. Find a hide number from arithmetic progression.  
 `brain-progression`
-5. "Поиск простого числа". Определить,является ли указанное число простым.<a href=https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE > Что такое простое число?</a>  
+6. Check the number is prime.  
 `brain-prime`
 
-Ниже можно онакомиться с работой этих игр.
+## Example of program work
 
-### Игра: "Проверка на чётность". Установка и запуск
+### Setup and install
 [![asciicast](https://asciinema.org/a/ijhbqUWV4sC1N7P4i6QmxGby7.svg)](https://asciinema.org/a/ijhbqUWV4sC1N7P4i6QmxGby7)
+
+### 1.Game: "Check the number is even"
 [![asciicast](https://asciinema.org/a/PDlbRbVgQeRoUC0DxAsVGVFk9.svg)](https://asciinema.org/a/PDlbRbVgQeRoUC0DxAsVGVFk9)
 
-### Игра: "Калькулятор"
+### 2.Game: "Calculator"
 [![asciicast](https://asciinema.org/a/jmie3g1s9OiV1UpPgQeFPBsHy.svg)](https://asciinema.org/a/jmie3g1s9OiV1UpPgQeFPBsHy)
 
-### Игра "НОД"
+### 3.Game: "Find the greatest common divisor between two numbers"
 [![asciicast](https://asciinema.org/a/E39BIKewbf5KJHdWtau34DFR4.svg)](https://asciinema.org/a/E39BIKewbf5KJHdWtau34DFR4)
 
-### Игра "Арифметическая прогрессия"
+### 4.Game: "Find a hide number from arithmetic progression"
 [![asciicast](https://asciinema.org/a/xpoeNabNc2qGAamrymt08cznD.svg)](https://asciinema.org/a/xpoeNabNc2qGAamrymt08cznD)
 
-### Игра "Поиск простого числа"
+### 5.Game: "Check the number is prime"
 [![asciicast](https://asciinema.org/a/Ncwac1XfJt05dxNbUHDUW4HW4.svg)](https://asciinema.org/a/Ncwac1XfJt05dxNbUHDUW4HW4)
 
