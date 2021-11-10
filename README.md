@@ -1,7 +1,7 @@
 # Welcome to the Brain🧠games!
 [![Actions Status](https://github.com/urtaevS/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/urtaevS/python-project-lvl1/actions/workflows/hexlet-check.yml)
 [![Linter Test](https://github.com/urtaevS/python-project-lvl1/actions/workflows/linter-test.yml/badge.svg)](https://github.com/urtaevS/python-project-lvl1/actions/workflows/linter-test.yml)
-<a href=https://codeclimate.com/github/codeclimate/codeclimate/maintainability><img src=https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability /></a>
+<a href="https://codeclimate.com/github/urtaevS/python-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/17a08dc766fb5c6acc2e/maintainability" /></a>
 
 ### 
 
