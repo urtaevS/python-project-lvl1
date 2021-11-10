@@ -40,7 +40,8 @@ def is_prime(number):
             result = number % divider_number
             divider_number += 2
             if result == 0:
-                return False
-                
-            else:
-                return True
+                divide_count += 1             
+        if divide_count > 2:
+            return False
+        else:
+            return True
