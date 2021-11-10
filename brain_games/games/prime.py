@@ -15,7 +15,7 @@ def generate_game_data():
 
 def get_question_and_answer():
     """Collect 'question' and 'correct_answer' for games"""
-    
+
     number = generate_game_data()
     print(number)
     question = number
@@ -40,7 +40,7 @@ def is_prime(number):
             result = number % divider_number
             divider_number += 2
             if result == 0:
-                divide_count += 1             
+                divide_count += 1
         if divide_count > 2:
             return False
         else:
