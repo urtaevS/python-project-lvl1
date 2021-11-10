@@ -20,31 +20,32 @@ def get_question_and_answer():
 
     number, step = generate_game_data()
 
-    correct_answer = str(getHide_number(number, step))
+    correct_answer = str(getHidden_number(number, step))
 
     question = get_progression(number, step).replace(correct_answer, '..', 1)
 
     return correct_answer, question
 
 
-def getHide_number(number, step):
+def getHidden_number(number, step):
     """Generate hide random number"""
+    lenProgression = LENGHT_OF_PROGRESSION
 
-    lastNumber = number + step * (10 - 1)
-    hide_number = randrange(number, lastNumber, step)
+    lastNumber = number + step * (lenProgression - 1)
+    hidden_number = randrange(number, lastNumber, step)
 
-    return hide_number
+    return hidden_number
 
 
 def get_progression(number, step):
     """Generate list of number for progression"""
 
     progression = ''
-    lenProgression = LENGHT_OF_PROGRESSION
+    count = LENGHT_OF_PROGRESSION
     nextNumber = number
 
-    while lenProgression:
+    while count:
         progression = progression + str(nextNumber) + ' '
         nextNumber = nextNumber + step
-        lenProgression -= 1
+        count -= 1
     return progression

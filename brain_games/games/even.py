@@ -18,12 +18,11 @@ def get_question_and_answer():
 
     number = generate_game_data()
     question = number
-    correct_answer = 'yes' if is_even(number) is True else 'no'
+    correct_answer = 'yes' if is_even(number) is False else 'no'
     return correct_answer, question
 
 
 def is_even(number):
     """Check variable 'number' for even"""
 
-    if number % 2 == 0:
-        return True
+    return bool(number % 2)

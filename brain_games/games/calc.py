@@ -39,4 +39,4 @@ def calculate(operator, number1, number2):
     elif operator == '*':
         correct_answer = number1 * number2
 
-    return str(correct_answer)
+    return correct_answer
